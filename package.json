@@ -8,6 +8,7 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "sync:game": "node scripts/sync-local-game.mjs",
+    "sync:web": "node scripts/sync-web-pages.mjs",
     "eas:build:ios:sim": "npx eas build -p ios --profile development",
     "eas:build:ios:preview": "npx eas build -p ios --profile preview",
     "eas:build:ios": "npx eas build -p ios --profile production",

@@ -9,6 +9,15 @@ Neon Hoopz is a neon arcade basketball game packaged with Expo for mobile play.
 
 If Android blocks install, allow `Install unknown apps` for your browser/files app, then retry the APK.
 
+## Play Online (GitHub Pages)
+
+- Permanent URL: https://andre22155b-del.github.io/Neon-Hoopz/
+
+If this URL shows 404 the first time, enable Pages in repository settings:
+- GitHub repo -> Settings -> Pages
+- Build and deployment -> Source: `Deploy from a branch`
+- Branch: `main` and folder: `/docs`
+
 ## Screenshots
 
 ### Menu / HUD
@@ -62,6 +71,7 @@ npx eas build -p android --profile preview
 - `npm run android` - Run Android (native run flow)
 - `npm run ios` - Run iOS (native run flow)
 - `npm run sync:game` - Sync latest bundled game HTML from the web build
+- `npm run sync:web` - Sync latest web build into `/docs` for GitHub Pages
 - `npm run eas:build:android:apk` - EAS preview APK build
 
 ## Project Structure
