@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Neon Hoopz",
+    "slug": "neon-hoopz-expo",
+    "version": "1.0.1",
+    "orientation": "landscape",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#03101c"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tobar.neonhoopz",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true
+        },
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.tobar.neonhoopz",
+      "versionCode": 2,
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#03101c"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a5a2920a-c671-4b4e-a444-7d3ea6fa7880"
+      }
+    }
+  }
+}

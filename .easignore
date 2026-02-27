@@ -1,0 +1,12 @@
+# Keep EAS upload lean
+node_modules/
+ios/
+android/
+.expo/
+.git/
+.vscode/
+coverage/
+dist/
+build/
+*.log
+.DS_Store
