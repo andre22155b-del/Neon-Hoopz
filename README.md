@@ -9,6 +9,26 @@ Neon Hoopz is a neon arcade basketball game packaged with Expo for mobile play.
 
 If Android blocks install, allow `Install unknown apps` for your browser/files app, then retry the APK.
 
+## Screenshots
+
+### Menu / HUD
+
+![Neon Hoopz menu placeholder](./docs/media/screenshot-menu.svg)
+
+### Gameplay View
+
+![Neon Hoopz gameplay placeholder](./docs/media/screenshot-gameplay.svg)
+
+## Gameplay GIF
+
+![Neon Hoopz gameplay GIF placeholder](./docs/media/gameplay-demo.svg)
+
+Replace the placeholder with your real capture at `./docs/media/gameplay-demo.gif` and update this line in README:
+
+```md
+![Neon Hoopz gameplay demo](./docs/media/gameplay-demo.gif)
+```
+
 ## Run Locally
 
 Requirements:
@@ -50,3 +70,4 @@ npx eas build -p android --profile preview
 - `src/generatedGameHtml.js` - Embedded/offline game payload
 - `scripts/sync-local-game.mjs` - Build sync script for embedded game HTML
 - `app.json` / `eas.json` - Expo/EAS config
+- `docs/media/` - README screenshots and gameplay media
