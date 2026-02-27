@@ -14,8 +14,9 @@ if (!scriptTagMatch) {
 
 const scriptPath = path.join(distDir, scriptTagMatch[1].replace(/^\//, ''));
 const builtJs = readFileSync(scriptPath, 'utf8');
+const safeBuiltJs = builtJs.replace(/<\/script/gi, '<\\/script');
 
-const inlinedHtml = indexHtml.replace(scriptTagMatch[0], `<script>${builtJs}</script>`);
+const inlinedHtml = indexHtml.replace(scriptTagMatch[0], () => `<script>${safeBuiltJs}</script>`);
 const escaped = inlinedHtml.replace(/`/g, '\\`').replace(/\$\{/g, '\\${');
 
 const outDir = path.join(expoRoot, 'src');
